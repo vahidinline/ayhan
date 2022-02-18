@@ -3,7 +3,7 @@ import "./productlist.css";
 import { products } from "../../data";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
+import Product from "../Product/Product";
 function ProductList() {
   const TITLE = "Ayhan Services";
   return (
@@ -36,9 +36,12 @@ function ProductList() {
               <div className="p-circle"></div>
               <div className="p-circle"></div>
             </div>
-
+            <Routes>
+              <Route path="/product/:id" element={<Product props={true} />} />
+            </Routes>
             <Link to={"/product/" + item.id}>
-              <img src={item.img} alt={item.desc} className="p-img" />
+              {/* <img src={item.img} alt={item.desc} className="p-img" /> */}
+              <p>{item.desc}</p>
             </Link>
           </div>
         ))}

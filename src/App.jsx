@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { auth } from "./firebase.jsx";
 import About from "./components/about/About";
 import Contact from "./components/Contact/Contact";
@@ -11,14 +10,9 @@ import Design from "./components/Design";
 import { signOut } from "firebase/auth";
 import Signup from "./components/Signup";
 import Profile from "./components/Profile";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Routes,
-  Link,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Payment from "./components/Payment.jsx";
+import { products } from "./data.js";
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(false);
@@ -35,7 +29,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Intro />} />
           <Route path="about" element={<About />} />
-          <Route path="/product/:id" element={<Product />} />
+          <Route path="/product/:id" element={<Product props={true} />} />
           <Route path="/productlist" element={<ProductList />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/edesign" element={<Design setIsAuth={setIsAuth} />} />

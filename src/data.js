@@ -7,26 +7,26 @@ export const products = [
   {
     id: 2,
     img: "https://www.thespruce.com/thmb/O9P8vWDE7mX8_J7Fp-LCaR3N9_k=/1820x1365/smart/filters:no_upscale()/modern-living-room-design-ideas-4126797-hero-a2fd3412abc640bc8108ee6c16bf71ce.jpg",
-    desc: "",
+    desc: "some text 2",
   },
   {
     id: 3,
     img: "http://cdn.home-designing.com/wp-content/uploads/2018/03/home-office-setup.jpg",
-    desc: "",
+    desc: "some text 3",
   },
   {
     id: 4,
     img: "http://cdn.home-designing.com/wp-content/uploads/2018/03/industrial-home-office-decor.jpg",
-    desc: "",
+    desc: "some text 4",
   },
   {
     id: 5,
     img: "https://mydecorative.com/wp-content/uploads/2013/09/modern-office-wooden-and-black-design.jpg",
-    desc: "",
+    desc: "some text 5",
   },
   {
     id: 6,
     img: "http://cdn.home-designing.com/wp-content/uploads/2018/06/minimalist-home-office-setup.jpg",
-    desc: "",
+    desc: "some text 6",
   },
 ];
