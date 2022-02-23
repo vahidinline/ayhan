@@ -1,7 +1,9 @@
 import React, { useState, useRef } from "react";
 import { Form, Col } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
-const FormP1 = () => {
+import ReCAPTCHA from "react-google-recaptcha";
+
+const FormP1 = ({ title }) => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
   const handleSubmit = (e) => {
@@ -41,12 +43,20 @@ const FormP1 = () => {
               placeholder="Email"
               name="Email"
             />
-            <select class="form-control form-select-lg mb-3" name="TypeOfPlace">
-              <option>Open this select menu</option>
-              <option value="Residental">Residental Place</option>
+            <input
+              type="text"
+              class="form-control"
+              placeholder={title}
+              name="service"
+              value={title}
+              disabled
+            />
+            {/* <select class="form-control form-select-lg mb-3" name="TypeOfPlace">
+              <option selected>Open this select menu</option>
+              <option value={title}> {title}</option>
               <option value="Commercial">Commercial Place</option>
               <option value="Others">Others</option>
-            </select>
+            </select> */}
             <input
               type="text"
               class="form-control"
@@ -59,24 +69,46 @@ const FormP1 = () => {
               placeholder="country"
               name="Country"
             />
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Size"
-              name="SizeOfPlace"
-            />
+            {title == "Minimal Commercial Decoration" && (
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Field of activity  "
+                name="SizeOfPlace"
+              />
+            )}
+
             <input
               type="text"
               class="form-control"
               placeholder="number of Rooms"
               name="Rooms"
             />
+            {title == "Minimal home Decoration" && (
+              <>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="number of restroom"
+                  name="WC"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Kitchen Area"
+                  name="kitchen"
+                />
+              </>
+            )}
+
             <input
               type="text"
               class="form-control"
               placeholder="Phone"
               name="Phone"
             />
+            <textarea class="form-control" placeholder="More info"></textarea>
+            {/* <ReCAPTCHA /> */}
             <button type="submit" class="btn btn-primary">
               Submit
             </button>

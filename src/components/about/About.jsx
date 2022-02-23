@@ -18,18 +18,17 @@ const About = () => {
         <h1 className="a-title">About Ayhan Group</h1>
         <p className="a-sub">Where does it come from?</p>
         <p className="a-desc">
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-          1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-          Evil) by Cicero, written in 45 BC. This book is a treatise on the
-          theory of ethics, very popular during the Renaissance. The first line
-          of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-          section 1.10.32.
+          Ayhan OÜ is an interior design firm in Estonia, Tallinn that will
+          handles residential and commercial spaces within the city, but also
+          works on projects nationwide. It specializes in modern and
+          contemporary styles, but also provides customized design services for
+          any type of project. The company aims for beauty, functionality and
+          excellence in every project. Thus, its team of designers are the best
+          in their field, experienced and equipped with a high quality
+          educational background in Interior Design and related fields. Most of
+          all, client satisfaction is Ayhan OÜ’s priority. It prides itself in
+          achieving clients’ goals for their space without compromising design,
+          quality and comfort.
         </p>
       </div>
     </div>

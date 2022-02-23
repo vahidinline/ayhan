@@ -46,7 +46,7 @@ const Design = ({ setIsAuth }) => {
       <Helmet>
         <title>{TITLE}</title>
       </Helmet>
-      <div class="container">
+      <div class="container p-5">
         <div class="row">
           <div class="col-sm">
             <Container className="container-fluid p-5">
@@ -92,15 +92,25 @@ const Design = ({ setIsAuth }) => {
               </Row>
             </Container>
           </div>
-          <div class="col-sm">
+          <div class="col-sm p-5">
             <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              e-Design: Online interior design consultation that includes space
+              design/plan, coordinating with client’s local suppliers for
+              furniture and raw materials, and access to Ayhan OÜ’s online space
+              designing platform. Ayhan OÜ designs projects for residential and
+              commercial properties, as well hospitality clients.
+              <br />
+              Ayhan OÜ is an interior design firm in Estonia, Tallinn that will
+              handles residential and commercial spaces within the city, but
+              also works on projects nationwide. It specializes in modern and
+              contemporary styles, but also provides customized design services
+              for any type of project. The company aims for beauty,
+              functionality and excellence in every project. Thus, its team of
+              designers are the best in their field, experienced and equipped
+              with a high quality educational background in Interior Design and
+              related fields. Most of all, client satisfaction is Ayhan OÜ’s
+              priority. It prides itself in achieving clients’ goals for their
+              space without compromising design, quality and comfort.
             </div>
           </div>
         </div>

@@ -1,6 +1,8 @@
 import React from "react";
 import "./intro.css";
 import { Helmet } from "react-helmet";
+import { Carousel } from "react-bootstrap";
+import { products } from "../../data";
 
 const Intro = () => {
   const TITLE =
@@ -22,14 +24,31 @@ const Intro = () => {
                 <div className="i-title-item">Residental Decorations</div>
                 <div className="i-title-item">E-Design service</div>
               </div>
+              <p className="i-desc">Interior design Group in Estonia</p>
             </div>
-            <p className="i-desc">Some Description about business</p>
+
             <nav></nav>
           </div>
         </div>
         <div className="i-right">
-          <div className="i-bg"></div>
-          {/* <img src={office} alt="office-decoration" className="i-image" /> */}
+          <div className="i-bg">
+            {" "}
+            <Carousel>
+              {products.map((item) => (
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={item.img}
+                    alt="First slide"
+                  />
+                  <Carousel.Caption>
+                    <h3>{item.title}</h3>
+                    <p>{item.desc}</p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          </div>
         </div>
       </div>
     </>

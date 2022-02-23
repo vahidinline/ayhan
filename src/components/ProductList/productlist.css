@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-top: 90px;
 }
 
 .pl-texts {
@@ -68,6 +69,7 @@
 .pl-img {
   width: 100%;
   transition: all 10s ease;
+  height: 90%;
 }
 
 .p:hover .p-img {

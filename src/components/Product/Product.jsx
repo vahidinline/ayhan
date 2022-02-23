@@ -29,7 +29,7 @@ function Product({ props }) {
             {content.desc} for {content.title}
           </div>
           <div className="text-center">
-            <FormP1 />
+            <FormP1 title={content.title} />
           </div>
         </div>
       </div>

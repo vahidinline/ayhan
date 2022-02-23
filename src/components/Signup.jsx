@@ -34,13 +34,12 @@ const Signup = ({ setIsAuth }) => {
   const TITLE = "e-Design";
 
   return (
-    <div>
+    <div className="container p-5">
       <Helmet>
         <title>{TITLE}</title>
       </Helmet>
-
       <Container>
-        <div class="col-sm">
+        <div class="col-sm p-5">
           <input
             type="text"
             className="form-control"
