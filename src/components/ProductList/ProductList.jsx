@@ -41,7 +41,7 @@ function ProductList() {
               <Route path="/product/:id" element={<Product props={true} />} />
             </Routes>
             <Link to={"/product/" + item.id}>
-              <img src={item.img} alt={item.desc} className="pl-img" />
+              <img src={item.thumb} alt={item.desc} className="pl-img" />
             </Link>
           </div>
         ))}

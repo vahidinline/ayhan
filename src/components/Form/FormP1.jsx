@@ -28,7 +28,6 @@ const FormP1 = ({ title }) => {
   return (
     <div className="container">
       <div class="row">
-        <div class="col"></div>
         <div class="col">
           <form ref={formRef} onSubmit={handleSubmit}>
             <input
@@ -77,13 +76,14 @@ const FormP1 = ({ title }) => {
                 name="SizeOfPlace"
               />
             )}
-
-            <input
-              type="text"
-              class="form-control"
-              placeholder="number of Rooms"
-              name="Rooms"
-            />
+            {title != "E-design Service" && (
+              <input
+                type="text"
+                class="form-control"
+                placeholder="number of Rooms"
+                name="Rooms"
+              />
+            )}
             {title == "Minimal home Decoration" && (
               <>
                 <input
@@ -116,7 +116,6 @@ const FormP1 = ({ title }) => {
             {done && "  Thank you..."}
           </form>
         </div>
-        <div class="col"></div>
       </div>
     </div>
   );

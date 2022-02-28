@@ -26,9 +26,9 @@ const Signup = ({ setIsAuth }) => {
       const user = await createUserWithEmailAndPassword(auth, email, password);
       localStorage.setItem("isAuth", true);
       setIsAuth(true);
-      navigate("/profile");
+      navigate("/payment");
     } catch (error) {
-      console.log("error :", error);
+      alert("error :", error);
     }
   };
   const TITLE = "e-Design";
